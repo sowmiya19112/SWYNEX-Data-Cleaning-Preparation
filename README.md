@@ -1,4 +1,3 @@
-# SWYNEX-Data-Cleaning-Preparation
 Data Cleaning and Preparation using MySQL
 # SWYNEX Data Cleaning & Preparation
 

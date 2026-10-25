@@ -20,6 +20,9 @@ Student Performance Factors dataset containing 6,607 records and 20 columns.
 5. Validated numeric columns using minimum and maximum values.
 6. Verified that the cleaned table retained 6,607 rows.
 7. Checked all 20 columns for NULL and empty values; the final validation returned zero missing values.
+8.  Identified one Exam_Score value above 100 in the raw dataset.
+9.  Corrected the value from 101 to 100 in the cleaned dataset.
+10.  Verified that no Exam_Score values exceed 100 after cleaning.
 
 ## Files
 - `code_file.sql` — SQL queries used for cleaning and validation.

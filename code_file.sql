@@ -184,3 +184,18 @@ SELECT
     SUM(Teacher_Quality IS NULL OR TRIM(Teacher_Quality) = '') AS missing_teacher_quality,
     SUM(Tutoring_Sessions IS NULL) AS missing_tutoring_sessions
 FROM cleaned_student_data;
+SELECT Exam_Score, COUNT(*) AS total
+FROM raw_student_data
+WHERE Exam_Score > 100
+GROUP BY Exam_Score;
+UPDATE cleaned_student_data
+SET Exam_Score = 100
+WHERE Exam_Score = 101
+LIMIT 1;
+SELECT COUNT(*) AS invalid_scores
+FROM cleaned_student_data
+WHERE Exam_Score > 100;
+SELECT *FROM cleaned_student_data
+WHERE Exam_Score = 100;
+SELECT * FROM cleaned_student_data
+WHERE Exam_Score > 100;
